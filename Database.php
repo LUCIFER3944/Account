@@ -1,10 +1,10 @@
 <?php
 class Database {
-    private $host = "localhost"; // Database host
-    private $username = "root";  // Database username
-    private $password = "";      // Database password
-    private $dbname = "users"; // Database name
-    private $conn; // Database connection object
+    private $host = "localhost"; 
+    private $username = "root";  
+    private $password = "";      
+    private $dbname = "users"; 
+    private $conn; 
 
     // Method to connect to the database
     public function connect() {

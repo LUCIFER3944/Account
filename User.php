@@ -41,16 +41,16 @@ class User {
 
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
             if ($user && password_verify($password, $user['password'])) {
-                return $user; // Return user data if login is successful
+                return $user; 
             } else {
-                return false; // Invalid credentials
+                return false; 
             }
         } catch (PDOException $e) {
             return "Error: " . $e->getMessage();
         }
     }
 
-    // Get user data by ID
+ 
     public function getUserById($id) {
         try {
             $query = "SELECT * FROM users WHERE id = :id";
